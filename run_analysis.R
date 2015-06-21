@@ -39,3 +39,7 @@ X <- cbind(subject, Y,X)
 ## Set column labels
 colnames(X)[1] <- "subject"
 colnames(X)[2] <- "activity"
+
+## Calc mean for each subject and activity and save to file
+tidy <- aggregate(. ~ subject + activity, data=X, mean)
+write.table(tidy, "tidy.txt", row.names = FALSE)
