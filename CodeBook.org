@@ -1,0 +1,10 @@
+* General
+Tidying of sensor data from [[http://archive.ics.uci.edu/ml/datasets/Human%2BActivity%2BRecognition%2BUsing%2BSmartphones][Human Activity Recognition Using Smartphones Data Set ]]
+* Performed Steps
+The steps are performed automatically by ~run_analysis.R~ as long as the dataset is in the same directory.
+
+1) Test as well as training data are merged
+2) Only columns of mean and standard deviation are used
+3) Subjects and activity labels by name are directly included in the dataset
+4) Mean for each measurement is calculated per subject and activity
+5) Resulting dataset is saved as ~tidy.txt~
